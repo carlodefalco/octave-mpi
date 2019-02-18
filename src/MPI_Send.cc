@@ -24,8 +24,9 @@
 #include <oct-map.h>
 #include <octave/load-save.h>
 #include <octave/ls-oct-binary.h>
+using namespace octave;
 
-static const load_save_format format = LS_BINARY;
+static const load_save_format frmt = load_save_system::BINARY;
 static const octave::mach_info::float_format flt_fmt = octave::mach_info::flt_fmt_unknown;
 static const bool swap = false;
 static const std::ios::openmode omode = std::ios::out | std::ios::binary;
@@ -62,7 +63,7 @@ Return an integer @var{INFO} to indicate success or failure.\n\
             {
               MPI_Comm comm = ov_mpi_comm (args(3));
               std::stringstream file (omode);
-              write_header (file, format);
+              //write_header (file, frmt);
 
               if (! save_binary_data (file, args(0),
                                       "mpi_message",

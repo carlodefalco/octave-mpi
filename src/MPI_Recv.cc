@@ -25,8 +25,9 @@
 #include <octave/load-save.h>
 #include <octave/ls-oct-binary.h>
 
-static const load_save_format format = LS_BINARY;
-static octave::mach_info::float_format flt_fmt = octave::mach_info::flt_fmt_unknown;
+using namespace octave;
+static const load_save_format frmt = load_save_system::BINARY;
+static octave::mach_info::float_format flt_fmt = octave::mach_info::native_float_format ();
 static bool swap = false;
 static const std::ios::openmode imode = std::ios::in | std::ios::binary;
 static bool dummy;
@@ -80,12 +81,12 @@ MPI_Comm_Load function \n\
                   std::stringstream file (imode);
                   file.str (std::string (buffer, num));
                   
-                  if (read_binary_file_header (file, swap, flt_fmt, true) != 0)
-                    {
-                      info = MPI_ERR_OTHER;
-                      std::cerr << "error decoding data" << std::endl;
-                    }
-                  else
+                  // if (read_binary_file_header (file, swap, flt_fmt, true) != 0)
+                  //   {
+                  //     info = MPI_ERR_OTHER;
+                  //     std::cerr << "error decoding data" << std::endl;
+                  //   }
+                  // else
                     {
                       std::string nm = read_binary_data (file, swap, flt_fmt, "",
                                                          dummy, retval(0), doc);

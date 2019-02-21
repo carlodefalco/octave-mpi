@@ -22,7 +22,7 @@
 DEFMETHOD_DLD (MPI_Comm_size, interp, args,nargout ,"-*- texinfo -*-\n\
 @deftypefn {Loadable Function} {} [@var{RANK} @var{INFO}] = MPI_Comm_size (@var{COMM})\n\
 Return the size of a communicator.\n\
-The comunicator object @var{COMM} must be sepcified \n\
+The comunicator object @var{COMM} must be specified \n\
 or otherwise an error occurs. \n\
  @example\n\
  @group\n\

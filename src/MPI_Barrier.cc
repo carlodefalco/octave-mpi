@@ -23,7 +23,7 @@
 DEFMETHOD_DLD (MPI_Barrier, interp, args, ,
 "-*- texinfo -*-\n\
 @deftypefn {Loadable Function} {} @var{INFO} = MPI_Barrier (@var{COMM})\n\
-Block processes in the communicator @var{COMM} untill the call to this routine has been reached by all.\n\
+Block processes in the communicator @var{COMM} until the call to this routine has been reached by all.\n\
 The communicator object @var{COMM} must be specified otherwise \n\
 an error occurs. \n\
  @example\n\

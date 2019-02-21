@@ -10,4 +10,4 @@ SystemRequirements: mpi
 BuildRequires: mpi
 Autoload: no
 License: GPLv3+
-Url: https://bitbucket.org/cdf1/octave-mpi
+Url: https://github.com/carlodefalco/octave-mpi

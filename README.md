@@ -1,40 +1,59 @@
-Octave bindings for basic Message Passing Interface (MPI) functions
-for parallel computing.
+# Octave MPI
 
-CONTENTS:
+## Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
 
 --------------------
-1) INSTALLATION INSTRUCTIONS
+## CONTENTS:
 
-2) ORIGINAL README
+1. HISTORY
+2. INSTALLATION INSTRUCTIONS
+3. ORIGINAL README
+
 --------------------
+## 1. HISTORY
 
-1) INSTALLATION INSTRUCTIONS
+This project was started in 2010 under the name *openmpi_ex* 
+By Riccardo Corradini in collaboration with Jaroslav Hajek. 
+It was intended as more intuitive and more maintainable
+alternative to other similar packages existing at that time, 
+namely the MPI Toolbox for Octave (MPITB) by Javier Fernández 
+Baldomero and Mancia Anguita.
+
+Carlo de Falco started contributing in 2012, then took over
+the package maintainance in 2014 after Riccardo Corradini had
+stepped down in 2013. At the same time the name of the package
+was changed to *mpi*.
+
+Since 2017 the main repository for the package was moved out
+of sourceforge and is now at https://github.com/carlodefalco/octave-mpi
+
+
+## 2. INSTALLATION INSTRUCTIONS
 
 The makefile included derives all the info it needs for building
 the code from running mpic++, so make sure that mpicc is in your
 path before running Octave or type 
 
-putenv ("PATH", "/path/to/mpic++:${PATH}")
+    putenv ("PATH", ["/path/to/mpic++:" getenv("PATH")])
 
 from within Octave.
 Once this is done you should be able to install openmpi_ext from a
 locally dowloaded tarball by doing:
 
-pkg install mpi-<version>.tar.gz
+    pkg install mpi-<version>.tar.gz
 
 or directly from the url by doing (for example for version 3.1.0
 of the package)
 
-pkg install 'https://github.com/carlodefalco/octave-mpi/releases/v3.1.0.tar.gz'
+    pkg install 'https://github.com/carlodefalco/octave-mpi/archive/v<version.number>.tar.gz'
 
+--------------------
 
-2) ORIGINAL README
+## 3. ORIGINAL README
 
-
-Below are the contents of the original README file included with the first release
-by R. Corradini, I am not sure all the info there still make sense but they are still
-reported here, just in case ...
+*Below are the contents of the original README file included with the first release
+by R. Corradini, most of the info there is very outdated but they are still
+reported here, just in case, mainly for historical reasons*
 
 The code is general-purpose, but  I would like to use it for econometrics.
 So the first step will be to install the following tarball from

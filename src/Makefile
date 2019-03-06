@@ -18,8 +18,8 @@ all: MPI_Init.oct
 %.o : %.cc octave_mpi_communicator.h
 	$(MKOCTFILE) $(MPIINC) -c $<
 
-%.oct: %.o $(OBJS)
-	$(MKOCTFILE) $(MPILIBS) $(OBJS) -o $@
+MPI_Init.oct: $(OBJS) MPI_Init.o
+	$(MKOCTFILE) $(MPILIBS) $(OBJS) -o MPI_Init.oct
 clean:
 	$(RM) *.o  *.oct *~
 

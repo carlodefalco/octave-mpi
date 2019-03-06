@@ -1,11 +1,11 @@
 Name: mpi
-Version: 2.2.1
-Date: 2018-05-31
+Version: 3.1.0
+Date: 2019-03-08
 Author: Riccardo Corradini, Jaroslav Hajek, Carlo de Falco
 Maintainer: Carlo de Falco
 Title: mpi
 Description: Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
-Depends: octave (>= 4.4.0)
+Depends: octave (>= 5.1.0)
 SystemRequirements: mpi
 BuildRequires: mpi
 Autoload: no

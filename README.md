@@ -8,7 +8,7 @@
 
 ## 1. HISTORY
 
-This project was started in 2010 under the name *openmpi_ex* 
+This project was started in 2010 under the name *openmpi_ext* 
 By Riccardo Corradini in collaboration with Jaroslav Hajek. 
 It was intended as more intuitive and more maintainable
 alternative to other similar packages existing at that time, 

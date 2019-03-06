@@ -20,9 +20,9 @@ by doing:
 
 pkg install mpi-<version>.tar.gz
 
-or directly from the ftp server by doing
+or directly from the url by doing
 
-pkg install -forge mpi
+pkg install 'https://github.com/carlodefalco/octave-mpi/releases/mpi-<version>.tar.gz'
 
 
 2) ORIGINAL README

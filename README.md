@@ -2,14 +2,12 @@
 
 ## Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
 
---------------------
 ## CONTENTS:
 
 1. HISTORY
 2. INSTALLATION INSTRUCTIONS
 3. ORIGINAL README
 
---------------------
 ## 1. HISTORY
 
 This project was started in 2010 under the name *openmpi_ex* 
@@ -47,7 +45,6 @@ of the package)
 
     pkg install 'https://github.com/carlodefalco/octave-mpi/archive/v<version.number>.tar.gz'
 
---------------------
 
 ## 3. ORIGINAL README
 

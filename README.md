@@ -1,6 +1,4 @@
-# Octave MPI
-
-## Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
+# Octave MPI : Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
 
 ## CONTENTS:
 

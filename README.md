@@ -23,9 +23,10 @@ locally dowloaded tarball by doing:
 
 pkg install mpi-<version>.tar.gz
 
-or directly from the url by doing
+or directly from the url by doing (for example for version 3.1.0
+of the package)
 
-pkg install 'https://github.com/carlodefalco/octave-mpi/releases/v<version>.tar.gz'
+pkg install 'https://github.com/carlodefalco/octave-mpi/releases/v3.1.0.tar.gz'
 
 
 2) ORIGINAL README

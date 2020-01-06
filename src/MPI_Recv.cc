@@ -18,6 +18,7 @@
 
 #include "octave_mpi_communicator.h"
 
+#include <iostream>
 #include <string>
 #include <sstream>
 

@@ -27,10 +27,10 @@ of sourceforge and is now at https://github.com/carlodefalco/octave-mpi
 ## 2. INSTALLATION INSTRUCTIONS
 
 The makefile included derives all the info it needs for building
-the code from running mpic++, so make sure that mpicc is in your
+the code from running mpicxx, so make sure that mpicxx is in your
 path before running Octave or type 
 
-    putenv ("PATH", ["/path/to/mpic++:" getenv("PATH")])
+    putenv ("PATH", ["/path/to/mpicxx:" getenv("PATH")])
 
 from within Octave.
 Once this is done you should be able to install openmpi_ext from a

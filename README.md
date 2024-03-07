@@ -33,7 +33,7 @@ path before running Octave or type
     putenv ("PATH", ["/path/to/mpicxx:" getenv("PATH")])
 
 from within Octave.
-Once this is done you should be able to install openmpi_ext from a
+Once this is done you should be able to install `mpi` from a
 locally dowloaded tarball by doing:
 
     pkg install mpi-<version>.tar.gz
